@@ -10,17 +10,41 @@
 
 # hlsearch on (H) or off (h):
 ~h
+# Last Search Pattern:
+~Msle0~/\<3\>
+
+# Last Substitute String:
+$
+
 # Command Line History (newest to oldest):
 :wq
-|2,0,1676523797,,"wq"
-:qa
-|2,0,1676523530,,"qa"
+|2,0,1679266972,,"wq"
+:q
+|2,0,1679263713,,"q"
+:'<,'>wq
+|2,0,1679263706,,"'<,'>wq"
 :wa
-|2,0,1676523526,,"wa"
+|2,0,1679262236,,"wa"
+:qa!
+|2,0,1679260400,,"qa!"
+:x
+|2,0,1679258355,,"x"
+:qa
+|2,0,1679258235,,"qa"
+:w
+|2,0,1678570776,,"w"
+:Wq
+|2,0,1676838035,,"Wq"
+:qw
+|2,0,1676707770,,"qw"
 :sq
 |2,0,1676444128,,"sq"
 
 # Search String History (newest to oldest):
+? \<3\>
+|2,1,1677441465,,"\\<3\\>"
+? @$
+|2,1,1676772630,,"@$"
 
 # Expression History (newest to oldest):
 
@@ -29,116 +53,975 @@
 # Debug Line History (newest to oldest):
 
 # Registers:
+""0	LINE	0
+	# Scanf
+		ldr r0, =input1
+		sub sp, sp, #4
+		mov r1, sp
+		bl scanf
+		ldr r0, [sp, #0]
+		add sp, sp, #4
+|3,1,0,1,7,0,1679266412,"# Scanf","	ldr r0, =input1","	sub sp, sp, #4","	mov r1, sp","	bl scanf","	ldr r0, [sp, #0]","	add sp, sp, #4"
+"1	LINE	0
+		output: .asciz "\n%d Hours and %d minutes:"
+|3,0,1,1,1,0,1677260496,"	output: .asciz \"\\n%d Hours and %d minutes:\""
+"2	LINE	0
+		gcc mask.s -g -o mask
+|3,0,2,1,1,0,1677259999,"	gcc mask.s -g -o mask"
+"3	LINE	0
+	mask: mask.s
+|3,0,3,1,1,0,1677259970,"mask: mask.s"
+"-	CHAR	0
+	o
+|3,0,36,0,1,0,1679265434,"o"
 
 # File marks:
-'0  8  12  ~/Module_3/HelloWorld2.s
-|4,48,8,12,1676523797,"~/Module_3/HelloWorld2.s"
-'1  16  8  ~/Module_3/HelloWorld.s
-|4,49,16,8,1676523530,"~/Module_3/HelloWorld.s"
-'2  32  4  ~/Module_4/Assembly/PrintName.s
-|4,50,32,4,1676444132,"~/Module_4/Assembly/PrintName.s"
-'3  25  17  ~/Module_4/Assembly/PrintName.s
-|4,51,25,17,1676444001,"~/Module_4/Assembly/PrintName.s"
-'4  25  17  ~/Module_4/Assembly/PrintName.s
-|4,52,25,17,1676444001,"~/Module_4/Assembly/PrintName.s"
-'5  16  7  ~/Module_3/HelloWorld.s
-|4,53,16,7,1675923281,"~/Module_3/HelloWorld.s"
+'0  26  12  ~/Module_8/InchesToFt.s
+|4,48,26,12,1679266972,"~/Module_8/InchesToFt.s"
+'1  26  15  ~/Module_8/InchesToFt.s
+|4,49,26,15,1679266933,"~/Module_8/InchesToFt.s"
+'2  26  15  ~/Module_8/InchesToFt.s
+|4,50,26,15,1679266923,"~/Module_8/InchesToFt.s"
+'3  26  15  ~/Module_8/InchesToFt.s
+|4,51,26,15,1679266923,"~/Module_8/InchesToFt.s"
+'4  26  15  ~/Module_8/InchesToFt.s
+|4,52,26,15,1679266885,"~/Module_8/InchesToFt.s"
+'5  26  15  ~/Module_8/InchesToFt.s
+|4,53,26,15,1679266885,"~/Module_8/InchesToFt.s"
+'6  26  15  ~/Module_8/InchesToFt.s
+|4,54,26,15,1679266885,"~/Module_8/InchesToFt.s"
+'7  26  15  ~/Module_8/InchesToFt.s
+|4,55,26,15,1679266885,"~/Module_8/InchesToFt.s"
+'8  1  40  ~/Module_8/Makefile
+|4,56,1,40,1679266816,"~/Module_8/Makefile"
+'9  1  29  ~/Module_8/Makefile
+|4,57,1,29,1679266775,"~/Module_8/Makefile"
 
 # Jumplist (newest first):
--'  8  12  ~/Module_3/HelloWorld2.s
-|4,39,8,12,1676523797,"~/Module_3/HelloWorld2.s"
--'  1  0  ~/Module_3/HelloWorld2.s
-|4,39,1,0,1676523541,"~/Module_3/HelloWorld2.s"
--'  16  8  ~/Module_3/HelloWorld.s
-|4,39,16,8,1676523530,"~/Module_3/HelloWorld.s"
--'  16  8  ~/Module_3/HelloWorld.s
-|4,39,16,8,1676523530,"~/Module_3/HelloWorld.s"
--'  32  4  ~/Module_4/Assembly/PrintName.s
-|4,39,32,4,1676444132,"~/Module_4/Assembly/PrintName.s"
--'  32  4  ~/Module_4/Assembly/PrintName.s
-|4,39,32,4,1676444132,"~/Module_4/Assembly/PrintName.s"
--'  32  4  ~/Module_4/Assembly/PrintName.s
-|4,39,32,4,1676444132,"~/Module_4/Assembly/PrintName.s"
--'  32  4  ~/Module_4/Assembly/PrintName.s
-|4,39,32,4,1676444132,"~/Module_4/Assembly/PrintName.s"
--'  16  11  ~/Module_4/Assembly/PrintName.s
-|4,39,16,11,1676444124,"~/Module_4/Assembly/PrintName.s"
--'  16  11  ~/Module_4/Assembly/PrintName.s
-|4,39,16,11,1676444124,"~/Module_4/Assembly/PrintName.s"
--'  16  11  ~/Module_4/Assembly/PrintName.s
-|4,39,16,11,1676444124,"~/Module_4/Assembly/PrintName.s"
--'  16  11  ~/Module_4/Assembly/PrintName.s
-|4,39,16,11,1676444124,"~/Module_4/Assembly/PrintName.s"
--'  25  17  ~/Module_4/Assembly/PrintName.s
-|4,39,25,17,1676444080,"~/Module_4/Assembly/PrintName.s"
--'  25  17  ~/Module_4/Assembly/PrintName.s
-|4,39,25,17,1676444080,"~/Module_4/Assembly/PrintName.s"
--'  25  17  ~/Module_4/Assembly/PrintName.s
-|4,39,25,17,1676444080,"~/Module_4/Assembly/PrintName.s"
--'  25  17  ~/Module_4/Assembly/PrintName.s
-|4,39,25,17,1676444080,"~/Module_4/Assembly/PrintName.s"
--'  25  17  ~/Module_4/Assembly/PrintName.s
-|4,39,25,17,1676444001,"~/Module_4/Assembly/PrintName.s"
--'  25  17  ~/Module_4/Assembly/PrintName.s
-|4,39,25,17,1676444001,"~/Module_4/Assembly/PrintName.s"
--'  25  17  ~/Module_4/Assembly/PrintName.s
-|4,39,25,17,1676444001,"~/Module_4/Assembly/PrintName.s"
--'  25  17  ~/Module_4/Assembly/PrintName.s
-|4,39,25,17,1676444001,"~/Module_4/Assembly/PrintName.s"
--'  1  0  ~/Module_4/Assembly/PrintName.s
-|4,39,1,0,1676443464,"~/Module_4/Assembly/PrintName.s"
--'  1  0  ~/Module_4/Assembly/PrintName.s
-|4,39,1,0,1676443464,"~/Module_4/Assembly/PrintName.s"
--'  1  0  ~/Module_4/Assembly/PrintName.s
-|4,39,1,0,1676443464,"~/Module_4/Assembly/PrintName.s"
--'  1  0  ~/Module_4/Assembly/PrintName.s
-|4,39,1,0,1676443464,"~/Module_4/Assembly/PrintName.s"
--'  1  0  ~/Module_4/Assembly/PrintName.s
-|4,39,1,0,1676443464,"~/Module_4/Assembly/PrintName.s"
--'  1  0  ~/Module_4/Assembly/PrintName.s
-|4,39,1,0,1676443464,"~/Module_4/Assembly/PrintName.s"
--'  1  0  ~/Module_4/Assembly/PrintName.s
-|4,39,1,0,1676443464,"~/Module_4/Assembly/PrintName.s"
--'  1  0  ~/Module_4/Assembly/PrintName.s
-|4,39,1,0,1676443464,"~/Module_4/Assembly/PrintName.s"
--'  16  7  ~/Module_3/HelloWorld.s
-|4,39,16,7,1675923281,"~/Module_3/HelloWorld.s"
--'  16  7  ~/Module_3/HelloWorld.s
-|4,39,16,7,1675923281,"~/Module_3/HelloWorld.s"
--'  16  7  ~/Module_3/HelloWorld.s
-|4,39,16,7,1675923281,"~/Module_3/HelloWorld.s"
--'  16  7  ~/Module_3/HelloWorld.s
-|4,39,16,7,1675923281,"~/Module_3/HelloWorld.s"
--'  16  7  ~/Module_3/HelloWorld.s
-|4,39,16,7,1675923281,"~/Module_3/HelloWorld.s"
--'  16  7  ~/Module_3/HelloWorld.s
-|4,39,16,7,1675923281,"~/Module_3/HelloWorld.s"
--'  16  7  ~/Module_3/HelloWorld.s
-|4,39,16,7,1675923281,"~/Module_3/HelloWorld.s"
--'  16  7  ~/Module_3/HelloWorld.s
-|4,39,16,7,1675923281,"~/Module_3/HelloWorld.s"
--'  1  0  ~/Module_3/HelloWorld.s
-|4,39,1,0,1675922985,"~/Module_3/HelloWorld.s"
--'  1  0  ~/Module_3/HelloWorld.s
-|4,39,1,0,1675922985,"~/Module_3/HelloWorld.s"
--'  1  0  ~/Module_3/HelloWorld.s
-|4,39,1,0,1675922985,"~/Module_3/HelloWorld.s"
--'  1  0  ~/Module_3/HelloWorld.s
-|4,39,1,0,1675922985,"~/Module_3/HelloWorld.s"
--'  1  0  ~/Module_3/HelloWorld.s
-|4,39,1,0,1675922985,"~/Module_3/HelloWorld.s"
--'  1  0  ~/Module_3/HelloWorld.s
-|4,39,1,0,1675922985,"~/Module_3/HelloWorld.s"
--'  1  0  ~/Module_3/HelloWorld.s
-|4,39,1,0,1675922985,"~/Module_3/HelloWorld.s"
--'  1  0  ~/Module_3/HelloWorld.s
-|4,39,1,0,1675922985,"~/Module_3/HelloWorld.s"
--'  1  0  ~/Module_3/HelloWorld.s
-|4,39,1,0,1675922985,"~/Module_3/HelloWorld.s"
--'  1  0  ~/Module_3/HelloWorld.s
-|4,39,1,0,1675922985,"~/Module_3/HelloWorld.s"
+-'  26  12  ~/Module_8/InchesToFt.s
+|4,39,26,12,1679266972,"~/Module_8/InchesToFt.s"
+-'  26  15  ~/Module_8/InchesToFt.s
+|4,39,26,15,1679266933,"~/Module_8/InchesToFt.s"
+-'  26  15  ~/Module_8/InchesToFt.s
+|4,39,26,15,1679266923,"~/Module_8/InchesToFt.s"
+-'  26  15  ~/Module_8/InchesToFt.s
+|4,39,26,15,1679266885,"~/Module_8/InchesToFt.s"
+-'  29  7  ~/Module_8/InchesToFt.s
+|4,39,29,7,1679266832,"~/Module_8/InchesToFt.s"
+-'  29  7  ~/Module_8/InchesToFt.s
+|4,39,29,7,1679266832,"~/Module_8/InchesToFt.s"
+-'  29  7  ~/Module_8/InchesToFt.s
+|4,39,29,7,1679266832,"~/Module_8/InchesToFt.s"
+-'  29  7  ~/Module_8/InchesToFt.s
+|4,39,29,7,1679266832,"~/Module_8/InchesToFt.s"
+-'  1  40  ~/Module_8/Makefile
+|4,39,1,40,1679266816,"~/Module_8/Makefile"
+-'  1  40  ~/Module_8/Makefile
+|4,39,1,40,1679266816,"~/Module_8/Makefile"
+-'  1  40  ~/Module_8/Makefile
+|4,39,1,40,1679266816,"~/Module_8/Makefile"
+-'  1  40  ~/Module_8/Makefile
+|4,39,1,40,1679266816,"~/Module_8/Makefile"
+-'  1  40  ~/Module_8/Makefile
+|4,39,1,40,1679266816,"~/Module_8/Makefile"
+-'  1  40  ~/Module_8/Makefile
+|4,39,1,40,1679266816,"~/Module_8/Makefile"
+-'  1  40  ~/Module_8/Makefile
+|4,39,1,40,1679266816,"~/Module_8/Makefile"
+-'  1  40  ~/Module_8/Makefile
+|4,39,1,40,1679266816,"~/Module_8/Makefile"
+-'  1  40  ~/Module_8/Makefile
+|4,39,1,40,1679266816,"~/Module_8/Makefile"
+-'  1  40  ~/Module_8/Makefile
+|4,39,1,40,1679266816,"~/Module_8/Makefile"
+-'  1  40  ~/Module_8/Makefile
+|4,39,1,40,1679266816,"~/Module_8/Makefile"
+-'  1  40  ~/Module_8/Makefile
+|4,39,1,40,1679266816,"~/Module_8/Makefile"
+-'  1  40  ~/Module_8/Makefile
+|4,39,1,40,1679266816,"~/Module_8/Makefile"
+-'  1  40  ~/Module_8/Makefile
+|4,39,1,40,1679266816,"~/Module_8/Makefile"
+-'  1  40  ~/Module_8/Makefile
+|4,39,1,40,1679266816,"~/Module_8/Makefile"
+-'  1  40  ~/Module_8/Makefile
+|4,39,1,40,1679266816,"~/Module_8/Makefile"
+-'  1  29  ~/Module_8/Makefile
+|4,39,1,29,1679266775,"~/Module_8/Makefile"
+-'  1  29  ~/Module_8/Makefile
+|4,39,1,29,1679266775,"~/Module_8/Makefile"
+-'  1  29  ~/Module_8/Makefile
+|4,39,1,29,1679266775,"~/Module_8/Makefile"
+-'  1  29  ~/Module_8/Makefile
+|4,39,1,29,1679266775,"~/Module_8/Makefile"
+-'  1  29  ~/Module_8/Makefile
+|4,39,1,29,1679266775,"~/Module_8/Makefile"
+-'  1  29  ~/Module_8/Makefile
+|4,39,1,29,1679266775,"~/Module_8/Makefile"
+-'  1  29  ~/Module_8/Makefile
+|4,39,1,29,1679266775,"~/Module_8/Makefile"
+-'  1  29  ~/Module_8/Makefile
+|4,39,1,29,1679266775,"~/Module_8/Makefile"
+-'  1  29  ~/Module_8/Makefile
+|4,39,1,29,1679266775,"~/Module_8/Makefile"
+-'  1  29  ~/Module_8/Makefile
+|4,39,1,29,1679266775,"~/Module_8/Makefile"
+-'  1  29  ~/Module_8/Makefile
+|4,39,1,29,1679266775,"~/Module_8/Makefile"
+-'  1  29  ~/Module_8/Makefile
+|4,39,1,29,1679266775,"~/Module_8/Makefile"
+-'  1  29  ~/Module_8/Makefile
+|4,39,1,29,1679266775,"~/Module_8/Makefile"
+-'  1  29  ~/Module_8/Makefile
+|4,39,1,29,1679266775,"~/Module_8/Makefile"
+-'  1  29  ~/Module_8/Makefile
+|4,39,1,29,1679266775,"~/Module_8/Makefile"
+-'  1  29  ~/Module_8/Makefile
+|4,39,1,29,1679266775,"~/Module_8/Makefile"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
+-'  80  17  ~/Module_8/libConversions.s
+|4,39,80,17,1679266752,"~/Module_8/libConversions.s"
 
 # History of marks within files (newest to oldest):
+
+> ~/Module_8/InchesToFt.s
+	*	1679266971	0
+	"	26	12
+	^	26	13
+	.	26	13
+	+	1	13
+	+	5	24
+	+	4	2
+	+	6	0
+	+	29	15
+	+	1	8
+	+	42	25
+	+	43	23
+	+	16	30
+	+	32	8
+	+	16	22
+	+	29	13
+	+	1	11
+	+	2	50
+	+	39	23
+	+	40	23
+	+	2	49
+	+	26	13
+
+> ~/Module_8/Makefile
+	*	1679266815	0
+	"	1	40
+	^	1	41
+	.	1	40
+	+	9	26
+	+	6	13
+	+	18	28
+	+	1	19
+	+	5	21
+	+	8	9
+	+	1	40
+	+	13	1
+	+	9	27
+	+	14	0
+	+	17	0
+	+	14	7
+	+	1	10
+	+	11	5
+	+	1	40
+
+> ~/Module_8/libConversions.s
+	*	1679266751	0
+	"	80	17
+	^	80	18
+	.	80	16
+	+	43	13
+	+	41	10
+	+	1	28
+	+	25	0
+	+	24	7
+	+	9	20
+	+	9	21
+	+	21	10
+	+	17	125
+	+	17	110
+	+	23	1
+	+	32	13
+	+	41	0
+	+	17	126
+	+	18	0
+	+	23	0
+	+	22	0
+	+	40	11
+	+	6	0
+	+	10	0
+	+	2	17
+	+	5	3
+	+	10	19
+	+	11	11
+	+	17	14
+	+	18	0
+	+	24	8
+	+	1	0
+	+	29	9
+	+	43	14
+	+	28	5
+	+	29	0
+	+	24	0
+	+	26	0
+	+	42	0
+	+	2	0
+	+	34	24
+	+	36	15
+	+	1	9
+	+	5	1
+	+	24	6
+	+	129	23
+	+	105	5
+	+	106	2
+	+	62	76
+	+	129	7
+	+	106	2
+	+	12	10
+	+	112	9
+	+	106	4
+	+	105	4
+	+	14	0
+	+	9	20
+	+	10	31
+	+	11	36
+	+	12	34
+	+	112	2
+	+	111	19
+	+	122	15
+	+	74	0
+	+	75	3
+	+	56	16
+	+	12	10
+	+	97	7
+	+	9	26
+	+	10	31
+	+	11	36
+	+	12	34
+	+	100	0
+	+	78	44
+	+	61	69
+	+	78	54
+	+	83	15
+	+	9	13
+	+	10	19
+	+	11	24
+	+	12	10
+	+	85	19
+	+	85	0
+	+	81	11
+	+	90	0
+	+	84	10
+	+	88	12
+	+	90	0
+	+	88	10
+	+	87	17
+	+	80	16
+
+> ~/Module_8/KPH.s
+	*	1679266467	0
+	"	42	0
+	^	42	0
+	.	41	11
+	+	1	5
+	+	2	75
+	+	43	6
+	+	56	26
+	+	57	25
+	+	58	22
+	+	13	17
+	+	28	16
+	+	13	17
+	+	25	10
+	+	27	17
+	+	37	15
+	+	31	7
+	+	38	0
+	+	41	11
+
+> ~/Module_8/MakeFile
+	*	1679265584	0
+	"	11	23
+	^	11	24
+	.	11	23
+	+	11	23
+
+> ~/Module_8/MakeFIle
+	*	1679265526	0
+	"	1	0
+
+> ~/Module_8/libCovnersions.s
+	*	1679265305	0
+	"	1	0
+
+> ~/Module_8/Miles2Kilometers.s
+	*	1679265231	0
+	"	26	19
+	^	26	20
+	.	26	19
+	+	2	48
+	+	40	28
+	+	41	21
+	+	27	20
+	+	1	19
+	+	5	0
+	+	1	18
+	+	2	56
+	+	39	22
+	+	40	30
+	+	26	19
+
+> ~/Module_8/CtoF.s
+	*	1679265167	0
+	"	7	0
+	^	7	0
+	.	8	0
+	+	2	59
+	+	34	30
+	+	35	29
+	+	8	31
+	+	21	7
+	+	4	26
+	+	2	58
+	+	39	30
+	+	40	21
+	+	26	7
+	+	1	6
+	+	2	58
+	+	5	0
+	+	7	0
+	+	7	5
+	+	7	0
+	+	5	11
+	+	26	7
+	+	39	18
+	+	40	20
+	+	8	0
+
+> ~/Module_8/makefile
+	*	1679264418	0
+	"	1	0
+
+> ~/Module_8/InchesToFt
+	*	1679262530	0
+	"	1	0
+
+> ~/Module_8/libConversions
+	*	1679262363	0
+	"	1	0
+
+> ~/Module_8/libConverisons.
+	*	1679260707	0
+	"	1	0
+
+> ~/Module_8/libConversions.o
+	*	1679260356	0
+	"	5	0
+
+> ~/Module_8/libConverisons.s
+	*	1679260145	0
+	"	1	0
+
+> ~/Module_8/F2C.s
+	*	1679260133	0
+	"	40	13
+	^	24	7
+	.	24	7
+	+	38	29
+	+	37	27
+	+	27	14
+	+	24	7
+
+> ~/Module_8/Feet2Inches.s
+	*	1679259600	0
+	"	40	13
+	^	37	63
+	.	39	19
+	+	40	14
+	+	28	16
+	+	37	63
+	+	39	19
+
+> ~/Module_8/libConversions.
+	*	1679259287	0
+	"	1	0
+
+> ~/Module_8/Feet2Inches.svim
+	*	1679258233	0
+	"	1	0
+
+> ~/Module_7/A.s
+	*	1678570897	0
+	"	5	13
+	^	5	14
+	.	5	13
+	+	1	14
+	+	1	28
+	+	5	13
+
+> ~/Module_7/A.o
+	*	1678566179	0
+	"	1	0
+
+> ~/Module_5/Assignment/Swap.s
+	*	1677443615	0
+	"	21	4
+	^	21	5
+	.	13	74
+	+	22	0
+	+	8	4
+	+	7	21
+	+	13	35
+	+	17	0
+	+	8	11
+	+	11	12
+	+	16	10
+	+	13	64
+	+	16	14
+	+	13	74
+
+> ~/Module_5/Assignment/makefile
+	*	1677441973	0
+	"	22	21
+	^	22	22
+	.	22	21
+	+	2	0
+	+	3	11
+	+	6	9
+	+	4	21
+	+	7	21
+	+	1	20
+	+	9	6
+	+	1	20
+	+	10	25
+	+	16	37
+	+	13	38
+	+	1	58
+	+	19	28
+	+	1	63
+	+	22	21
+
+> ~/Module_5/Assignment/MultiplyTen.s
+	*	1677441822	0
+	"	21	14
+	^	21	15
+	.	22	0
+	+	34	29
+	+	35	33
+	+	36	6
+	+	11	14
+	+	17	4
+	+	36	12
+	+	11	21
+	+	17	13
+	+	16	12
+	+	17	10
+	+	21	59
+	+	21	79
+	+	21	95
+	+	21	109
+	+	21	127
+	+	23	3
+	+	24	1
+	+	25	21
+	+	17	13
+	+	21	15
+	+	19	19
+	+	19	61
+	+	21	14
+	+	24	10
+	+	24	0
+	+	23	15
+	+	22	0
+
+> ~/Module_5/Assignment/InchesToFeet.s
+	*	1677440567	0
+	"	48	1
+	^	20	7
+	.	20	6
+	+	45	0
+	+	44	37
+	+	45	7
+	+	7	16
+	+	46	0
+	+	8	82
+	+	9	0
+	+	24	0
+	+	20	12
+	+	19	11
+	+	18	12
+	+	23	10
+	+	25	52
+	+	29	72
+	+	27	4
+	+	29	28
+	+	30	1
+	+	32	0
+	+	31	12
+	+	32	15
+	+	33	1
+	+	34	27
+	+	35	10
+	+	29	78
+	+	36	10
+	+	40	12
+	+	44	43
+	+	20	3
+	+	26	11
+	+	27	14
+	+	25	44
+	+	29	74
+	+	20	6
+
+> ~/Module_5/Assignment/FeetToInches.s
+	*	1677288873	0
+	"	32	12
+	^	32	13
+	.	32	12
+	+	44	29
+	+	45	0
+	+	44	8
+	+	45	33
+	+	44	30
+	+	46	21
+	+	47	1
+	+	46	11
+	+	47	43
+	+	11	17
+	+	12	19
+	+	10	17
+	+	21	8
+	+	25	44
+	+	48	0
+	+	43	28
+	+	25	55
+	+	27	15
+	+	27	0
+	+	24	1
+	+	23	29
+	+	25	13
+	+	27	6
+	+	27	16
+	+	33	14
+	+	34	0
+	+	36	0
+	+	35	0
+	+	47	12
+	+	28	14
+	+	27	6
+	+	28	14
+	+	27	2
+	+	26	0
+	+	27	2
+	+	7	17
+	+	11	21
+	+	16	9
+	+	19	21
+	+	32	12
+
+> ~/Module_5/Assignment/FtoC.s
+	*	1677288699	0
+	"	28	10
+	^	28	11
+	.	16	7
+	+	42	29
+	+	43	10
+	+	41	42
+	+	12	19
+	+	18	15
+	+	10	18
+	+	19	0
+	+	20	22
+	+	15	30
+	+	20	32
+	+	22	14
+	+	20	16
+	+	24	30
+	+	26	10
+	+	25	10
+	+	29	0
+	+	32	19
+	+	28	11
+	+	29	0
+	+	24	33
+	+	21	10
+	+	22	14
+	+	17	12
+	+	16	7
+
+> ~/Module_5/Assignment/FeetToInches
+	*	1677288437	0
+	"	1	0
+
+> ~/Module_5/Assignment/Negate.s
+	*	1677287824	0
+	"	29	10
+	^	29	11
+	.	24	0
+	+	31	37
+	+	32	17
+	+	31	26
+	+	32	35
+	+	33	11
+	+	32	39
+	+	11	17
+	+	33	9
+	+	32	28
+	+	16	12
+	+	15	17
+	+	14	27
+	+	20	14
+	+	26	0
+	+	23	28
+	+	23	6
+	+	24	0
+
+> ~/Module_5/Assignment/CtoF.s
+	*	1677261183	0
+	"	44	1
+	^	44	2
+	.	44	2
+	+	40	44
+	+	41	31
+	+	42	10
+	+	11	19
+	+	14	25
+	+	17	0
+	+	42	7
+	+	11	16
+	+	42	1
+	+	28	16
+	+	28	0
+	+	16	12
+	+	18	14
+	+	14	40
+	+	19	10
+	+	28	1
+	+	40	46
+	+	30	10
+	+	32	7
+	+	23	27
+	+	28	0
+	+	22	0
+	+	19	34
+	+	25	4
+	+	23	45
+	+	27	14
+	+	26	11
+	+	29	0
+	+	27	34
+	+	23	15
+	+	40	17
+	+	44	2
+
+> ~/Module_5/Assignment/CtoF
+	*	1677260653	0
+	"	1	0
+
+> ~/Module_5/Lecture/mask.s
+	*	1677259377	0
+	"	12	10
+	^	12	11
+	.	12	10
+	+	18	4
+	+	14	0
+	+	7	28
+	+	12	10
+
+> ~/Module_5/Lecture/poly.s
+	*	1677259342	0
+	"	17	10
+	^	17	11
+	.	14	10
+	+	31	4
+	+	30	11
+	+	31	5
+	+	35	26
+	+	11	10
+	+	7	20
+	+	26	9
+	+	18	15
+	+	22	14
+	+	20	3
+	+	14	10
+
+> ~/Module_5/Lecture/makefile
+	*	1677259103	0
+	"	10	0
+	^	10	0
+	.	4	21
+	+	10	0
+	+	6	6
+	+	7	19
+	+	1	10
+	+	3	12
+	+	4	21
+	a	1	5
+
+> ~/Module_5/Lecture/minuteConversion.s
+	*	1677258051	0
+	"	24	3
+	^	24	4
+	.	24	4
+	+	40	4
+	+	37	13
+	+	40	0
+	+	12	9
+	+	7	1
+	+	42	39
+	+	43	22
+	+	7	0
+	+	45	0
+	+	23	11
+	+	29	14
+	+	21	52
+	+	14	48
+	+	19	12
+	+	21	52
+	+	41	43
+	+	34	16
+	+	35	9
+	+	33	10
+	+	24	4
+
+> ~/Module_5/Lecture/minuteConversion
+	*	1677258027	0
+	"	1	0
+
+> ~/Module_5/Lecture/memory.s
+	*	1677256296	0
+	"	18	14
+	^	18	15
+	.	11	16
+	+	18	14
+	+	7	14
+	+	11	16
+
+> ~/Module_4/Assembly/printIntMain.s
+	*	1676839765	0
+	"	41	37
+	^	41	38
+	.	41	37
+	+	41	37
+
+> ~/Module_4/Assembly/printNameMain.s
+	*	1676839430	0
+	"	25	9
+	^	25	10
+	.	25	10
+	+	40	15
+	+	36	6
+	+	20	9
+	+	24	14
+	+	25	10
+
+> ~/Module_4/Assembly/makefile
+	*	1676839259	0
+	"	2	11
+	^	1	15
+	.	2	11
+	+	3	11
+	+	1	25
+	+	1	67
+	+	2	0
+	+	3	0
+	+	1	17
+	+	1	14
+	+	1	67
+	+	1	51
+	+	1	44
+	+	1	15
+	+	2	11
+
+> ~/Module_4/Assembly/printName
+	*	1676839052	0
+	"	1	0
+
+> ~/Module_4/Assembly/PrintName.s
+	*	1676837585	0
+	"	32	4
+	^	16	12
+	.	10	12
+	+	28	4
+	+	23	29
+	+	7	23
+	+	6	6
+	+	19	12
+	+	27	0
+	+	32	19
+	+	18	38
+	+	30	39
+	+	19	20
+	+	21	12
+	+	10	12
+
+> ~/Module_4/Assembly/PrintName
+	*	1676837516	0
+	"	1	0
+
+> ~/Module_4/makefile
+	*	1676773346	0
+	"	2	12
+	^	2	13
+	.	2	13
+	+	2	4
+	+	2	47
+	+	2	0
+	+	3	1
+	+	1	12
+	+	2	5
+	+	3	5
+	+	2	13
+
+> ~/Module_4/HelloWorldMain.s
+	*	1676772760	0
+	"	20	36
+	^	20	37
+	.	20	37
+	+	4	0
+	+	4	5
+	+	21	15
+	+	21	0
+	+	20	37
+
+> ~/Module_4/MakeFile
+	*	1676772724	0
+	"	3	36
+	^	3	37
+	.	3	37
+	+	3	37
+
+> ~/Module_4/Template.s
+	*	1676708307	0
+	"	1	0
+
+> ~/.vimrc
+	*	1676708280	0
+	"	10	42
+	^	10	43
+	.	10	42
+	+	10	42
 
 > ~/Module_3/HelloWorld2.s
 	*	1676523794	0
@@ -170,21 +1053,3 @@
 	+	8	21
 	+	9	10
 	+	8	0
-
-> ~/Module_4/Assembly/PrintName.s
-	*	1676444128	0
-	"	32	4
-	^	16	12
-	.	10	12
-	+	28	4
-	+	23	29
-	+	7	23
-	+	6	6
-	+	19	12
-	+	27	0
-	+	32	19
-	+	18	38
-	+	30	39
-	+	19	20
-	+	21	12
-	+	10	12
